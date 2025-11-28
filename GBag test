@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gummy Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="app">
+
+    <!-- Page 1: Container Selection -->
+    <section id="step1" class="step active">
+        <h1>Select Your Container</h1>
+        <button class="choice" data-container="bag">Bag</button>
+        <button class="choice" data-container="jar">Jar</button>
+    </section>
+
+    <!-- Page 2: Size Selection -->
+    <section id="step2" class="step">
+        <h1>Select Size</h1>
+        <button class="size" data-size="8">½ lb (8 oz)</button>
+        <button class="size" data-size="16">1 lb (16 oz)</button>
+        <button class="size" data-size="32">2 lb (32 oz)</button>
+        <button class="size" data-size="48">3 lb (48 oz)</button>
+        <button class="size" data-size="nolimit">No Limit</button>
+    </section>
+
+    <!-- Page 3: Builder -->
+    <section id="step3" class="step">
+        <h1>Build Your Mix</h1>
+
+        <div id="container-display">
+            <img id="container-img" src="">
+            <div id="gummy-fill"></div>
+        </div>
+
+        <!-- Rotary Gummy Selector -->
+        <div id="rotary">
+            <button class="gummy" data-img="img/gummy1.png">Gummy 1</button>
+            <button class="gummy" data-img="img/gummy2.png">Gummy 2</button>
+            <button class="gummy" data-img="img/gummy3.png">Gummy 3</button>
+        </div>
+    </section>
+
+</div>
+
+<!-- Pop-up -->
+<div id="popup">
+    <div id="popup-content">
+        <p>You reached your limit. Upgrade to No Limit?</p>
+        <button id="upgrade">Upgrade</button>
+        <button id="decline">No Thanks</button>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
